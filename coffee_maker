@@ -1,0 +1,63 @@
+#include <Servo.h>  
+Servo Servo1; 
+Servo servo2;
+Servo servo3;
+Servo servo4;
+Servo servo5;
+void setup() { 
+Servo1.attach(2);
+Servo2.attach(3);
+Servo3.attach(4);
+Servo4.attach(5);
+Servo5.attach(6); 
+pinMode(7,OUTPUT);
+pinMode(8,OUTPUT);
+}
+   for(i=0;i<=180;i+=36)
+   {
+    if (i==0)
+    {
+      servol.write(0);
+      delay(500);
+      servo2.write(180);
+      delay(1000);      
+    }
+    if (i==36)
+    {
+      servol.write(36);      
+      delay(1000);
+      servo3.write(180);
+    }
+    if (i==72)
+    {
+      servol.write(72);
+       delay(1000);
+      servo4.write(180);
+    }
+    if (i==108)
+    {
+      servol.write(108);
+       delay(1000);
+   
+    }
+    if (i==144)
+    {
+      servol.write(144);
+      delay(1000);
+      servo5.write(180)
+      delay(1000);
+      digitalWrite(7,HIGH);
+      digitalWrite(8,LOW);
+      delay(10000);
+      digitalWrite(7,LOW);
+      digitalWrite(8,LOW);
+      delay(1000);
+      servo5.write(0);
+      delay(1000);
+      }
+    if (i==180)
+    {
+    servo1.write(180);
+    delay(1000);
+    }
+   }
