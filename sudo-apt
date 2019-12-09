@@ -1,0 +1,4 @@
+sudo apt-get update
+sudo pip3 install boltiot
+sudo pip3 install pyOpenSSL ndg-httpsclient pyasnl
+sudo pip3 install 'requests[security]'
